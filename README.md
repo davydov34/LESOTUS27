@@ -524,12 +524,12 @@ network:
 
 Применение изменений:
 
-> root@office1Server:~\# netplan try  
+> root@office1Server:\~\# netplan try  
 Do you want to keep these settings?  
 Press ENTER before the timeout to accept the new configuration  
 Changes will revert in 120 seconds
 Configuration accepted.  
-root@office1Server:~\#
+root@office1Server:\~\#
 
 При настройке интерфейсов и маршрутов в любой из ОС можно оставлять комментарии в файле. Перед комментарием должен стоять знак «#»
 
