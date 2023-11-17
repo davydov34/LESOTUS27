@@ -301,7 +301,7 @@ iptables -t nat -A POSTROUTING ! -d 192.168.0.0/16 -o eth0 -j MASQUERADE
 При настройке NAT таким образом, правило удаляется после перезагрузки сервера. Для того, чтобы правила применялись после перезагрузки, в Ubuntu 22.04 нужно выполнить следующие действия:  
 1)Подключиться по SSH к хосту: vagrant ssh inetRouter  
 2)Проверить, что отключен другой файервол: systemctl status ufw    
-> vagrant@inetRouter:~$ systemctl status ufw  
+> vagrant@inetRouter:\~$ systemctl status ufw  
 ufw.service - Uncomplicated firewall  
      Loaded: loaded (/lib/systemd/system/ufw.service; enabled; vendor preset: enabled)  
      Active: active (exited) since Wed 2023-11-15 15:36:17 UTC; 3h 11min ago  
@@ -309,7 +309,7 @@ ufw.service - Uncomplicated firewall
    Main PID: 550 (code=exited, status=0/  SUCCESS)
         CPU: 706us  
         Warning: some journal files were not opened due to insufficient permissions.  
-        vagrant@inetRouter:~\$
+        vagrant@inetRouter:\~\$
 
 Служка фаервола запущена, её нужно отключить и удалить из автозапуска:   
 
