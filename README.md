@@ -476,14 +476,14 @@ network:
 
 Посмотреть список всех маршрутов: **ip route**
 
-> vagrant@office1Server:~\$ ip route  
+> vagrant@office1Server:\$ ip route  
 default via 10.0.2.2 dev eth0 proto dhcp src 10.0.2.15 metric 100  
 10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 metric 100  
 10.0.2.2 dev eth0 proto dhcp scope link src 10.0.2.15 metric 100  
 10.0.2.3 dev eth0 proto dhcp scope link src 10.0.2.15 metric 100  
 192.168.2.128/26 dev eth1 proto kernel scope link src 192.168.2.130   
 192.168.50.0/24 dev eth2 proto kernel scope link src 192.168.56.21  
-vagrant@office1Server:~\$ 
+vagrant@office1Server:\$ 
 
 Удалить маршрут: **ip route del 0.0.0.0/0 via 192.168.2.129**
 
